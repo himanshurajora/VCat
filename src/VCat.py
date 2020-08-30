@@ -1,12 +1,12 @@
 #This is The VCFCat 1.1v
 import sys
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import * #pip install pyqt5
 from random import randint
  #gui lib
 from os import path,mkdir,listdir,remove, rmdir
 import os
 from shutil import move
-from dirsync import sync
+from dirsync import sync #pip install dirsync
 from time import sleep
 #different supported file formats in arrays 
 #more can be added for costomization
@@ -21,6 +21,7 @@ APP_FORMAT = ['.exe']
 RESTRICTED = ['Video', 'Audio', 'Zips', 'Docs', 'Code', 'Exe', 'Common', 'VCFCat.exe']
 PROGRESS = 0
 
+#Application Class
 class Application(QDialog):
 
     def __init__(self):
